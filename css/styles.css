@@ -69,6 +69,7 @@ nav ul li a:hover{
     align-items: center;
     padding-top: 4rem;
     padding-left: 0px;
+    background-image: url("../recursos/Imagen/portada.jpg");
 }
 
 #tarjeta{
@@ -89,6 +90,7 @@ nav ul li a:hover{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    border-radius: 5px;
 }
 
 .contacto1{
