@@ -166,17 +166,74 @@ nav ul li a:hover{
 }
 
 
-.proyectos{
-    height: 400px;
-    width: 100%;
-    background-color: #bec3bc  ;
+
+
+
+
+
+
+
+
+
+.aboutme{
+    background-color: #bec3bc;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.face{
+    width: 20vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:#65727a;    
+    border-color:#8f9a9c;
+    border-bottom: solid 3px;
+}
+.aboutme .spanResumen{
+    width: 20vw;
+    color:#65727a;
+    background-color: #e6e8e3;
+    border-color:#8f9a9c;
+    border-bottom: solid 3px;
+    padding: 30px;
+    font-size:large;
+    font-family: roboto;
+}
+.aboutme .spanResumen h2{
+    text-align: center;
+}
+
+
+
+.aboutme .spanAptitudes{
+    width: 20vw;
+    color:#65727a;
+    background-color: #e6e8e3;
+    border-color:#8f9a9c;
+    border-bottom: solid 3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+    font-size:large;
+    font-family: roboto;
+}
+
+.aboutme .spanAptitudes h2{
+    text-align: center;
 }
 
 
 
 
 
-.tecnologia{
+
+
+
+
+
+.proyectos{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -185,13 +242,13 @@ nav ul li a:hover{
     align-items: center;
 }
 
-.tecnologia button{
+.proyectos button{
     position: relative;
     background-color: transparent;
     border: none;
 }
 
-.tecnologia button:hover .tooltip{
+.proyectos button:hover .tooltip{
     visibility: visible;
 }
 
@@ -205,14 +262,136 @@ nav ul li a:hover{
 }
 
 .ico{
-    height: 10rem;
+    height: 5rem;
     margin: 2rem;
 }
 
 .ico:hover{
-    height: 11rem;
+    height: 6rem;
     transition: 500ms;
 }
+
+
+.proyCont{
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.proyectos .titulo{
+    color:#65727a;
+    font-family: roboto;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.proyecto1_link{
+    height: 300px;
+    width: 300px;
+    background-image: url("../recursos/Imagen/kaggle.svg");
+    background-position: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.capa1{
+    position: absolute;  
+    width: 100%;
+    height: 100%;
+    background-color:#65727a;    
+    border-radius: 10px;
+    color: #e6e8e3;
+    text-align: center;
+    margin: 0;
+    visibility: hidden;
+    font-family: roboto;
+    
+}
+
+.capa1 p{
+    padding: 20px;
+}
+
+.proyecto1_link:hover > .capa1{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.proyecto2_link{
+    height: 300px;
+    width: 300px;
+    background-image: url("../recursos/Imagen/yelp.png");
+    background-position: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.capa2{
+    position: absolute;  
+    width: 100%;
+    height: 100%;
+    background-color:#65727a;    
+    border-radius: 10px;
+    color: #e6e8e3;
+    text-align: center;
+    margin: 0;
+    visibility: hidden;
+    font-family: roboto;
+    
+}
+
+.capa2 p{
+    padding: 20px;
+}
+
+.proyecto2_link:hover > .capa2{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.proyecto3_link{
+    height: 300px;
+    width: 300px;
+    background-image: url("../recursos/Imagen/telecom2.png");
+    background-position: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.capa3{
+    position: absolute;  
+    width: 100%;
+    height: 100%;
+    background-color:#65727a;    
+    border-radius: 10px;
+    color: #e6e8e3;
+    text-align: center;
+    margin: 0;
+    visibility: hidden;
+    font-family: roboto;
+    
+}
+
+.capa3 p{
+    padding: 20px;
+}
+
+.proyecto3_link:hover > .capa3{
+    opacity: 1;
+    visibility: visible;
+}
+
 
 
 
