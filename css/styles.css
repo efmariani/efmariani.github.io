@@ -13,15 +13,16 @@ html{
 
 nav ul{
     background-color: #65727a;
-    width: 100%;
+    width: 100vw;
     height: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: none;
     position: fixed;
     z-index: 100;
     margin: 0px;
+    padding: 0px;
 }
 
 nav ul li{
@@ -29,7 +30,7 @@ nav ul li{
     border: none;
     height: 100%;
     font-family: roboto;
-    font-size: 30px;
+    font-size: 1.75em;
     list-style: none;
     margin-right: 20px;
 }
@@ -46,6 +47,7 @@ nav ul li a{
     text-decoration:none;
     height: 100%;
     color: #e6e8e3;
+
 }
 
 nav ul li a:hover{
@@ -178,51 +180,48 @@ nav ul li a:hover{
 .aboutme{
     background-color: #bec3bc;
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-
+    align-items: center;
 }
 
-.face{
-    width: 20vw;
+.aboutme .spanFace{
+    width: 50vw;
+    background-color:#65727a;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color:#65727a;    
-    border-color:#8f9a9c;
-    border-bottom: solid 3px;
+    border-top-right-radius: 10px;    
 }
+.aboutme .spanFace .face{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+
+}    
+
 .aboutme .spanResumen{
-    width: 20vw;
+    width:50vw;
     color:#65727a;
     background-color: #e6e8e3;
-    border-color:#8f9a9c;
-    border-bottom: solid 3px;
-    padding: 30px;
     font-size:large;
     font-family: roboto;
-}
-.aboutme .spanResumen h2{
     text-align: center;
 }
-
 
 
 .aboutme .spanAptitudes{
-    width: 20vw;
+    width: 50vw;
     color:#65727a;
     background-color: #e6e8e3;
-    border-color:#8f9a9c;
-    border-bottom: solid 3px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 30px;
     font-size:large;
     font-family: roboto;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: #65727a;
+    border-bottom: solid 3px;
 }
 
-.aboutme .spanAptitudes h2{
-    text-align: center;
-}
+
 
 
 
@@ -240,6 +239,7 @@ nav ul li a:hover{
     width: 100%;
     background-color: #d7dacf;
     align-items: center;
+    justify-content: center;
 }
 
 .proyectos button{
@@ -275,7 +275,7 @@ nav ul li a:hover{
 .proyCont{
     width: 70%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -296,6 +296,7 @@ nav ul li a:hover{
     position: relative;
     border-radius: 10px;
     margin: 0;
+    margin-top: 10px;
 }
 
 .capa1{
@@ -332,6 +333,8 @@ nav ul li a:hover{
     position: relative;
     border-radius: 10px;
     margin: 0;
+    
+    margin-top: 10px;
 }
 
 .capa2{
@@ -367,6 +370,8 @@ nav ul li a:hover{
     position: relative;
     border-radius: 10px;
     margin: 0;
+    
+    margin-top: 10px;
 }
 
 .capa3{
@@ -435,3 +440,51 @@ nav ul li a:hover{
     transition: 500ms;
 }
 
+
+#advertencia{
+    text-align: center;
+    padding: 5px;
+    border-top: solid 1px black;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    nav ul li{
+        font-size: 1em;
+    }
+    .inicio h2{
+        text-align: center;
+    }
+    .aboutme .spanFace{
+        width: 80vw;   
+    }
+    .aboutme .spanFace .face{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;  
+    
+    }    
+    
+    .aboutme .spanResumen{
+        width:80vw;
+    }
+    
+    
+    .aboutme .spanAptitudes{
+        width: 80vw;
+    }
+    .programas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .programas button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
