@@ -186,6 +186,7 @@ nav ul li a:hover{
 }
 
 .aboutme .spanFace{
+    margin-top: 40px;
     width: 50vw;
     background-color:#65727a;
     border-top-left-radius: 10px;
@@ -221,34 +222,23 @@ nav ul li a:hover{
     border-bottom: solid 3px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.proyectos{
+.programas{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     width: 100%;
-    background-color: #d7dacf;
+    background-color: #bec3bc;
     align-items: center;
     justify-content: center;
 }
 
-.proyectos button{
+.programas button{
     position: relative;
     background-color: transparent;
     border: none;
+    text-align: center;
 }
 
-.proyectos button:hover .tooltip{
+.programas button:hover .tooltip{
     visibility: visible;
 }
 
@@ -270,6 +260,22 @@ nav ul li a:hover{
     height: 6rem;
     transition: 500ms;
 }
+
+
+
+
+
+
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d7dacf;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 .proyCont{
@@ -486,5 +492,12 @@ nav ul li a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .inicio h2{
+        padding-right: 10px;
+    }
+    nav ul li a{
+        padding-top: 10px;
+    
     }
   }
