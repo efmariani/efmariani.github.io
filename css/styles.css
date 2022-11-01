@@ -221,6 +221,10 @@ nav ul li a:hover{
     border-color: #65727a;
     border-bottom: solid 3px;
 }
+.aboutme p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 .programas{
     display: flex;
