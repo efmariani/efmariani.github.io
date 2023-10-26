@@ -23,6 +23,8 @@ nav ul{
     z-index: 100;
     margin: 0px;
     padding: 0px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+
 }
 
 nav ul li{
@@ -33,6 +35,9 @@ nav ul li{
     font-size: 1.75em;
     list-style: none;
     margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
 }
 
 nav ul li:hover{
@@ -40,6 +45,7 @@ nav ul li:hover{
     text-decoration:none;
     background-color: #e6e8e3;
     transition: 500ms;
+    
 }
 
 nav ul li a{
@@ -54,7 +60,6 @@ nav ul li a:hover{
     display: inline-block;
     text-decoration:none;
     color: #65727a;
-    background-color: #e6e8e3;
     transition: 500ms;
     
 }
@@ -64,14 +69,37 @@ nav ul li a:hover{
 
 .inicio{
     width: 100%;
-    background-color: #8f9a9c;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 4rem;
     padding-left: 0px;
-    background-image: url("../recursos/Imagen/portada.jpg");
+    background-image: url("../recursos/Imagen/wall.jpg");
+
+    height:100vh;
+    background-size: cover;
+}
+
+#tarjetaContenedor {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.spanFace1{    
+    align-items: center;
+}
+
+#face1 {
+    width: 400px; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+
 }
 
 #tarjeta{
@@ -81,13 +109,24 @@ nav ul li a:hover{
 }
 
 
-.inicio h2{
+#name{
     margin: 0;
     font-family: roboto;
-    color: #d7dacf;
+    color: #363738;
     font-size:xx-large;
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
+    font-size: 300%;   
 }
+
+#tarjeta h1{
+    margin: 0;
+    font-family: roboto;
+    color: #363738;
+    font-size:xx-large;
+    margin-bottom: 20px;
+    font-size: 300%;   
+}
+
 #nube{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -136,6 +175,8 @@ nav ul li a:hover{
     padding: 1rem;
     text-decoration: none;
     color: #e6e8e3;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+
 }
 
 
@@ -168,9 +209,152 @@ nav ul li a:hover{
 }
 
 
+#dataAnalyst .titulo{
+    color:#65727a;
+    font-family: roboto;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+#dataAnalyst{
+    background-color: #bec3bc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dataAnalyst2{
+    background-color: #e6e8e3;
+    display: flex;
+    align-items: stretch;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.spanData {
+    display: inline-block; 
+    overflow: hidden; 
+}
+  
+
+.spanDataResumen {
+    display: inline-block;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que desborde el tamaño */
+    text-align: center;
+    color: #d7dacf;
+    background-color: #157198;
+    background-image: url("../recursos/Imagen/graficos.jpeg");
+    border-radius: 10px;
+}
+
+.itemsData{
+    border-radius: 10px;
+    background-color: #122b6a;
+    opacity: 90%;
+    margin: 30px;
+    font-family: roboto;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    padding: 10px;
+    
+    
+}
+
+#dataTitle {
+    font-size: 300%;
+    background-color: #122b6a;
+    font-family: roboto;
+    
+    color: #d7dacf;
+}
+
+#dataAnalyst2 h3{
+    font-size: 200%;
+    font-family: roboto;
+    color: #122b6a;
+    background-color:#e6e8e3;
+}
+
+.spanDataResumen p{
+    font-size: 120%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
 
 
 
+
+#engineer{
+    background-color: #bec3bc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#engineer2{
+    background-color: #e6e8e3;
+    display: flex;
+    align-items: stretch;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.spanData {
+    display: inline-block; 
+    overflow: hidden; 
+}
+  
+
+.spanEngineerResumen {
+    display: inline-block;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que desborde el tamaño */
+    text-align: center;
+    color: #d7dacf;
+    background-color: #157198;
+    background-image: url("../recursos/Imagen/ing.jpeg");
+    border-radius: 10px;
+    width: 100%;
+}
+
+.itemsEngineer{
+    border-radius: 10px;
+    background-color: #247d24;
+    opacity: 95%;
+    margin: 30px;
+    font-family: roboto;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    
+    
+}
+
+#engineerTitle {
+    font-size: 300%;
+    background-color: #247d24;
+    font-family: roboto;
+    
+    color: #d7dacf;
+}
+
+#engineer2 h3{
+    font-size: 200%;
+    font-family: roboto;
+    color: #247d24;
+    background-color:#e6e8e3;
+}
+
+.spanEngineerResumen p{
+    font-size: 120%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
 
 
 
@@ -178,41 +362,69 @@ nav ul li a:hover{
 
 
 .aboutme{
-    background-color: #bec3bc;
+    background-color:#e6e8e3;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
 }
 
-.aboutme .spanFace{
-    margin-top: 40px;
-    width: 50vw;
-    background-color:#65727a;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
-}
-.aboutme .spanFace .face{
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;  
-
-}    
-
-.aboutme .spanResumen{
-    width:50vw;
+.aboutme .titulo{
     color:#65727a;
-    background-color: #e6e8e3;
-    font-size:large;
     font-family: roboto;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+#aboutme2{
+    background-color: #65727a;
+    display: flex;
+    align-items: center;
+    width: 90%x;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.spanFace {
+    display: inline-block; 
+    overflow: hidden; 
+}
+  
+.spanFace img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+}
+
+.spanResume {
+    display: inline-block; /* Hace que el span se comporte como un bloque en línea */
+    width: 500px; /* Tamaño deseado en ancho */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que desborde el tamaño */
     text-align: center;
 }
 
 
-.aboutme .spanAptitudes{
-    width: 50vw;
-    color:#65727a;
-    background-color: #e6e8e3;
+#divSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#divSkills2{
+    margin: 20px;
+    background-color: #bec3bc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+.spanAptitudes{
+    color:black;
     font-size:large;
     font-family: roboto;
     text-align: center;
@@ -221,16 +433,20 @@ nav ul li a:hover{
     border-color: #65727a;
     border-bottom: solid 3px;
 }
+
+
 .aboutme p{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
+    font-family: roboto;   
+    color: #e6e8e3;
+    font-size:x-large;
+    width: 300px;
 }
 
 .programas{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #bec3bc;
     align-items: center;
     justify-content: center;
 }
@@ -421,7 +637,9 @@ nav ul li a:hover{
     justify-content: center;
     height: 400px;
     width: 100%;
-    background-color: #e6e8e3  ;
+    background-color: #65727a  ;
+    color: #e6e8e3;
+    font-family: roboto;
 }
 
 .contacto span{
@@ -437,7 +655,7 @@ nav ul li a:hover{
     margin: 0.5rem;
     border-radius: 25px;
     background-color:#e6e8e3;
-    border:solid 2px #65727a;
+    border:solid 2px black;
 }
 
 .contacto button img{
@@ -462,53 +680,64 @@ nav ul li a:hover{
 
 
 
-@media (max-width: 600px) {
-    nav ul li{
-        font-size: 1em;
+@media screen and (max-width: 768px) {
+    
+    nav ul {        
     }
-    .inicio h2{
+
+    .inicio {
+        width: 100%;
+        padding: 0;
+        display: inline-block;
+        height:auto;
+        background-size: cover;
+    }
+
+    #tarjetaContenedor {
+        flex-direction: column; /* Cambia la dirección del flexbox */    
+        padding: 0;
+    }
+
+    #face1 {
+        width: 100%; 
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #tarjeta {
+        align-items: center; /* Centra los elementos */
         text-align: center;
     }
-    .aboutme .spanFace{
-        width: 80vw;   
+
+    /* Haz más ajustes según tus necesidades para pantallas pequeñas */
+
+    #dataAnalyst2 {
+        width: 90%;
     }
-    .aboutme .spanFace .face{
-        width: 100%;
+
+    #engineer2 {
+        width: 90%;
+    }
+
+
+    #aboutme2 {
+        width: 90%; /* Hace que el ancho sea del 100% para adaptarse a la pantalla */
+        margin: 10px; /* Ajusta el margen para pantallas pequeñas */
+        padding: 5px; /* Ajusta el relleno para pantallas pequeñas */
+        flex-direction: column;
+    }
+
+    .spanFace img {
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px;  
-    
-    }    
-    
-    .aboutme .spanResumen{
-        width:80vw;
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0px;
+        width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
     }
-    
-    
-    .aboutme .spanAptitudes{
-        width: 80vw;
+    .contacto h1{
+        text-align: center;
     }
-    .programas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .programas button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .inicio h2{
-        padding-right: 10px;
-    }
-    nav ul li a{
-        padding-top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;    
-    }
-    nav ul li a:hover{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-    }    
-  }
+
+
+
+}
